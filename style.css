@@ -10,6 +10,25 @@ a {
   color: #00f0ff;
 }
 
+/* BARRA DE ROLAGEM */
+/* Largura da barra */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Fundo da barra (trilho) */
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+/* Parte que desliza (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border-radius: 6px;
+}
+/* Parte que desliza ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff007a;
+}
+
 /* Navbar */
 .navbar-container {
   width: 100%;
@@ -135,20 +154,35 @@ a {
   align-items: center;
   padding-left: 80px;
   padding-right: 80px;
+  background-color: #0b0c10;
+}
+
+.skills-content-left {
+  color: #00f0ff;
+}
+
+.skills-content-left h1 {
+  font-size: 3rem;
+}
+
+.skills-content-left p {
+  font-size: 1.125rem;
 }
 
 .skills-content-right {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .skills {
   flex: 0 0 70%;
   max-width: 70%;
+  height: 500px;
   margin-top: 40px;
   padding: 30px;
   border-radius: 10px;
-  background-color: antiquewhite;
+  overflow-y: scroll;
+  background-color: #1d202b;
 }
 
 .skills .skill-item {
@@ -160,7 +194,15 @@ a {
   line-height: 40px;
   font-weight: 600;
   font-size: 16px;
-  color: black;
+  color: #00f0ff;
+  text-transform: capitalize;
+}
+
+.skills .skill-item p {
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #00f0ff;
   text-transform: capitalize;
 }
 
@@ -182,13 +224,13 @@ a {
   top: 0;
   height: 100%;
   border-radius: 4px;
-  background-color: red;
+  background-color: #ff007a;
 }
 
 .skills .skill-item .skill-percent {
   position: absolute;
   right: 0;
-  color: black;
+  color: #00f0ff;
   top: -40px;
   font-weight: 400;
   line-height: 40px;
